@@ -1,0 +1,534 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao {
+    padding: 60px 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d3b66;
+    margin-bottom: 40px;
+}
+
+.bg-cinza {
+    background-color: #f4f7f6;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #f4d35e;
+}
+
+.logo p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4d35e;
+}
+
+/* Banner Principal */
+.hero {
+    background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85)), url('https://picsum.photos') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #f4d35e;
+    color: #0d3b66;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #eeaf61;
+}
+
+/* Layout de Notícias (Grid) */
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-noticia {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 5px solid #0d3b66;
+}
+
+.card-noticia h3 {
+    margin-bottom: 10px;
+    color: #0d3b66;
+}
+
+.card-noticia .data {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.ler-mais {
+    display: inline-block;
+    margin-top: 15px;
+    color: #eeaf61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Layout de Benefícios */
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card-beneficio {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-beneficio h4 {
+    color: #0d3b66;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Formulário */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #0d3b66;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #082542;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 0 10px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+footer h3, footer h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Mobile Básica */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Estilo complementar para as categorias do Blog */
+.categoria {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #0d3b66;
+    margin-bottom: 5px;
+}
+
+/* --- Melhorias de Divulgação e Integração --- */
+
+/* Estilo do Botão do WhatsApp Flutuante */
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.05);
+    background-color: #20ba5a;
+    color: white;
+}
+
+/* Layout de Duas Colunas do Blog */
+.layout-blog {
+    display: flex;
+    gap: 40px;
+}
+
+.lista-artigos {
+    flex: 2;
+}
+
+.sidebar-blog {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Caixa da Newsletter */
+.widget-newsletter {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #0d3b66;
+}
+
+.widget-newsletter h3 {
+    color: #0d3b66;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.widget-newsletter p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Ajuste Responsivo para o Blog no Celular */
+@media (max-width: 900px) {
+    .layout-blog {
+        flex-direction: column;
+    }
+    .sidebar-blog {
+        width: 100%;
+    }
+}
+
+/* --- PAINEL DE AVISOS URGENTES --- */
+.alerta-urgente {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.alerta-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge-alerta {
+    background-color: #fff;
+    color: #d9534f;
+    padding: 3px 8px;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    animation: piscar 1.5s infinite;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+/* --- VITRINE DE CONVÊNIOS --- */
+.grid-convenios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card-convenio {
+    background: #fff;
+    border: 1px solid #eef2f5;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card-convenio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(13, 59, 102, 0.1);
+}
+
+.icone-convenio {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card-convenio h3 {
+    color: #0d3b66;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-convenio p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tag-desconto {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: #0d3b66;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* --- MELHORIA: BOTÃO FECHAR ALERTA --- */
+.alerta-content {
+    position: relative;
+    padding-right: 40px; /* Garante que o texto não sobreponha o botão X */
+}
+
+.btn-fechar-alerta {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.btn-fechar-alerta:hover {
+    opacity: 1;
+}
+
+/* --- MELHORIA: ACCORDION FAQ --- */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #eef2f5;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    overflow: hidden;
+}
+
+.faq-pergunta {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0d3b66;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.faq-pergunta:hover {
+    background-color: #fcfdfe;
+}
+
+/* Adiciona um sinal de + que vira - quando ativo */
+.faq-pergunta::after {
+    content: '+';
+    font-size: 1.4rem;
+    color: #eeaf61;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.ativo .faq-pergunta::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9fbfd;
+}
+
+.faq-resposta p {
+    padding: 0 20px 20px 20px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- ESTILO DA CAIXA DE BUSCA --- */
+.caixa-busca {
+    margin-bottom: 25px;
+}
+
+.caixa-busca input {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1rem;
+    border: 2px solid #eef2f5;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.caixa-busca input:focus {
+    border-color: #0d3b66;
+}

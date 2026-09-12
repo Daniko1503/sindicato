@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINDMUNI | Sindicato dos Servidores de Espírito Santo do Pinhal - SP</title>
+    <meta name="description" content="Portal oficial do Sindicato dos Servidores Públicos Municipais de Espírito Santo do Pinhal. Reajuste salarial, plantão jurídico e convênios.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PAINEL DE AVISOS URGENTES -->
+    <div class="alerta-urgente">
+        <div class="container alerta-content">
+            <span class="badge-alerta">URGENTE</span>
+            <p><strong>Assembleia Geral Extraordinária:</strong> Quarta-feira, às 18h30, na sede do sindicato. Pauta: Votação da contraproposta de reajuste salarial 2026.</p>
+        </div>
+    </div>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>SINDMUNI</h1>
+                <p>Pinhal - SP</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="blog.html">Notícias/Blog</a></li>
+                    <li><a href="juridico.html">Jurídico</a></li>
+                    <li><a href="#convenios">Convênios</a></li>
+                    <li><a href="#filiar">Sindicalize-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Campanha Salarial 2026: Mobilização Total</h2>
+            <p>Acompanhe em tempo real as negociações com a Prefeitura de Espírito Santo do Pinhal e a defesa dos nossos direitos.</p>
+            <a href="blog.html" class="btn-principal">Ver Atualizações da Campanha</a>
+        </div>
+    </section>
+
+    <!-- GUIA DE CONVÊNIOS E PARCEIROS -->
+    <section id="convenios" class="container secao">
+        <h2 class="titulo-secao">Convênios e Benefícios do Filiado</h2>
+        <p style="text-align: center; max-width: 600px; margin: -20px auto 40px auto; color: #666;">
+            Apresente sua carteirinha do SINDMUNI e garanta descontos exclusivos em empresas parceiras na região de Pinhal.
+        </p>
+        <div class="grid-convenios">
+            <div class="card-convenio">
+                <div class="icone-convenio">🏥</div>
+                <h3>Plano de Saúde Unimed</h3>
+                <p>Tabela de valores diferenciada para servidores municipais e dependentes, sem taxa de adesão em campanhas.</p>
+                <span class="tag-desconto">Até 40% OFF</span>
+            </div>
+            <div class="card-convenio">
+                <div class="icone-convenio">🦷</div>
+                <h3>OdontoPrev</h3>
+                <p>Cobertura odontológica completa com atendimento emergencial 24h e clínicas credenciadas na cidade.</p>
+                <span class="tag-desconto">Preço Fixo Reduzido</span>
+            </div>
+            <div class="card-convenio">
+                <div class="icone-convenio">🎓</div>
+                <h3>Faculdade UniPinhal</h3>
+                <p>Descontos reais nas mensalidades de cursos de graduação e pós-graduação para você e seus filhos.</p>
+                <span class="tag-desconto">30% de Desconto</span>
+            </div>
+            <div class="card-convenio">
+                <div class="icone-convenio">💊</div>
+                <h3>Farmácia DrogaMuni</h3>
+                <p>Desconto em medicamentos genéricos e de marca diretamente na folha de pagamento ou balcão.</p>
+                <span class="tag-desconto">Até 25% OFF</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIOS (SINDICALIZAÇÃO E DENÚNCIA) -->
+    <section id="filiar" class="bg-cinza">
+        <div class="container secao grid-noticias">
+            <div class="form-container">
+                <h2>Ficha de Sindicalização Online</h2>
+                <form id="form-filiacao">
+                    <div class="campo"><label for="nome">Nome:</label><input type="text" id="nome" required></div>
+                    <div class="campo"><label for="matricula">Matrícula:</label><input type="text" id="matricula" required></div>
+                    <div class="campo"><label for="secretaria">Secretaria:</label><input type="text" id="secretaria" required placeholder="Ex: Educação, Saúde"></div>
+                    <div class="campo"><label for="whatsapp">WhatsApp:</label><input type="tel" id="whatsapp" required></div>
+                    <button type="submit" class="btn-enviar">Enviar via WhatsApp</button>
+                </form>
+            </div>
+            <div class="form-container" style="border-left: 5px solid #d9534f;">
+                <h2>Canal Seguro de Denúncias</h2>
+                <p>Relate assédio ou más condições de trabalho em Pinhal de forma anônima.</p>
+                <form id="form-denuncia">
+                    <div class="campo"><label for="denuncia-local">Secretaria/Local:</label><input type="text" id="denuncia-local" required></div>
+                    <div class="campo"><label for="denuncia-desc">Descrição:</label><textarea id="denuncia-desc" rows="4" style="width:100%; padding:10px; border-radius:4px; border:1px solid #ccc;" required></textarea></div>
+                    <button type="submit" class="btn-enviar" style="background-color: #d9534f;">Enviar Denúncia</button>
+                </form>
+            </div>
+        </div>
+        <!-- RECURSO 1: PAINEL DE AVISOS COM BOTÃO FECHAR -->
+<div class="alerta-urgente" id="painel-alerta">
+    <div class="container alerta-content">
+        <span class="badge-alerta">URGENTE</span>
+        <p><strong>Assembleia Geral Extraordinária:</strong> Quarta-feira, às 18h30, na sede do sindicato. Votação da contraproposta de reajuste.</p>
+        <button class="btn-fechar-alerta" id="fechar-alerta" aria-label="Fechar aviso">&times;</button>
+    </div>
+</div>
+
+<!-- (Mantenha o restante do seu HTML: Menu, Hero, Convênios...) -->
+
+<!-- RECURSO 2: SEÇÃO DE PERGUNTAS FREQUENTES (FAQ ACCORDION) -->
+<section class="container secao">
+    <h2 class="titulo-secao">Dúvidas Frequentes do Servidor (FAQ)</h2>
+    <p style="text-align: center; max-width: 600px; margin: -20px auto 40px auto; color: #666;">
+        Esclareça rapidamente os questionamentos mais comuns sobre os direitos do funcionalismo municipal de Pinhal.
+    </p>
+    
+    <div class="faq-container">
+        <!-- Pergunta 1 -->
+        <div class="faq-item">
+            <button class="faq-pergunta">Como funciona o cálculo da minha Progressão Funcional?</button>
+            <div class="faq-resposta">
+                <p>A progressão horizontal ocorre por tempo de serviço a cada período de estágio estabelecido no Estatuto do Servidor, desde que cumpridos os requisitos de assiduidade e pontuação mínima na avaliação periódica de desempenho instituída pela sua secretaria.</p>
+            </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="faq-item">
+            <button class="faq-pergunta">Quem tem direito a solicitar a Licença-Prêmio?</button>
+            <div class="faq-resposta">
+                <p>Todo servidor estatutário que completar 5 anos de efetivo exercício (quinquênio) sem penalidades disciplinares graves adquire o direito a 3 meses de licença remunerada. A concessão depende da conveniência e escala da administração municipal.</p>
+            </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="faq-item">
+            <button class="faq-pergunta">O que devo fazer em caso de indício de Assédio Moral na repartição?</button>
+            <div class="faq-resposta">
+                <p>Anote datas, horários e nomes de testemunhas que presenciaram os fatos. Guarde e-mails ou mensagens e utilize imediatamente nosso <strong>Canal Seguro de Denúncias</strong> de forma anônima, ou agende um atendimento presencial com o nosso Departamento Jurídico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me." class="whatsapp-flutuante" target="_blank">
+        <span>💬 WhatsApp do Sindicato</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
