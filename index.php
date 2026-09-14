@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- PAINEL DE AVISOS URGENTES -->
     <div class="alerta-urgente">
         <div class="container alerta-content">
